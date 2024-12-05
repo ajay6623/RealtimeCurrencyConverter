@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <p>Convert currencies in real-time.</p>
+      <form>
+        <input id="amount" type="number" placeholder="Enter amount" />
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+          "
+        >
+          <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="INR">INR</option>
+            <option value="EUR">EUR</option>
+          </select>
+          <span>to</span>
+          <select id="toCurrency">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
+        <button type="submit">Convert</button>
+      </form>
+      <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
